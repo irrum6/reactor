@@ -1,0 +1,79 @@
+$red: #ff4800;
+$black: #202020;
+$pink: #f87cf8;
+
+.card-red {
+  color: $red;
+}
+
+.card-black {
+  color: $black;
+}
+
+.card-pink {
+  color: $pink;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+$vmins: (
+  "0": 0,
+  "h": 0.5vmin,
+  "1": 1vmin,
+  "2": 2vmin,
+  "4": 4vmin,
+  "6": 6vmin
+);
+
+@each $k, $v in $vmins {
+  .p#{$k} {
+    padding: $v;
+  }
+  .pl#{$k} {
+    padding-left: $v;
+  }
+  .pr#{$k} {
+    padding-right: $v;
+  }
+  .pt#{$k} {
+    padding-top: $v;
+  }
+  .pb#{$k} {
+    padding-bottom: $v;
+  }
+  .f#{$k} {
+    font-size: $v;
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.inline {
+  display: inline;
+}
+
+.card-box {
+  border: 1px solid black;
+  width: 10vmin;
+}
+.card-body {
+  justify-content: center;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  .card-box {
+    width: 20vmin;
+  }
+}

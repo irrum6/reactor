@@ -1,0 +1,65 @@
+#hearts,
+#diamonds,
+#clubs,
+#spades {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.card {
+  display: inline-block;
+  background-color: #008060;
+  background-image: url("atlasnye.png");
+  width: 100px;
+  height: 150px;
+  padding: 0px;
+  border: 1px solid black;
+  clip-path: circle(69%);
+}
+
+$hoffsets: (
+  "two": 1180px,
+  "three": 1081px,
+  "four": 984px,
+  "five": 888px,
+  "six": 787px,
+  "seven": 690px,
+  "eight": 593px,
+  "nine": 495px,
+  "ten": 397px,
+  "jack": 300px,
+  "queen": 200px,
+  "king": 100px,
+  "ace": 0px
+);
+$heartsvoffset: -30px;
+$diamondsvoffset: -174px;
+$clubsvoffset: -316px;
+$spadesvoffset: -460px;
+
+/* hearts */
+@each $key, $hoffset in $hoffsets {
+  .hearts.#{$key} {
+    background-position: $hoffset $heartsvoffset;
+  }
+}
+
+/* diamonds */
+@each $key, $hoffset in $hoffsets {
+  .diamonds.#{$key} {
+    background-position: $hoffset $diamondsvoffset;
+  }
+}
+/* clubs */
+@each $key, $hoffset in $hoffsets {
+  .clubs.#{$key} {
+    background-position: $hoffset $clubsvoffset;
+  }
+}
+/* spades */
+@each $key, $hoffset in $hoffsets {
+  .spades.#{$key} {
+    background-position: $hoffset $spadesvoffset;
+  }
+}
