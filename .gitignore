@@ -2,5 +2,6 @@
 /boris/node_modules
 /boris/package.json
 /boris/package-lock.json
-/boris/*.css
-/boris/*.css.map
+/boris/src/components/*.css
+/boris/src/components/*.css.map 
+# use sass --watch ./:./ to compile
