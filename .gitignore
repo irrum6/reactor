@@ -1,7 +1,7 @@
 #development
-/boris/node_modules
-/boris/package.json
-/boris/package-lock.json
-/boris/src/components/*.css
-/boris/src/components/*.css.map 
-# use sass --watch ./:./ to compile
+*/node_modules
+# */*.css.map
+*/*.css
+# */pages/components/styles/*.css
+*/pages/components/styles/*.css.map 
+# use sass ./:./ to compile

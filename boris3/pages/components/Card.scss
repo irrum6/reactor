@@ -1,0 +1,22 @@
+$red: #ff4800;
+$black: #202020;
+$pink: #f87cf8;
+
+.card-red {
+  color: $red;
+}
+
+.card-black {
+  color: $black;
+}
+
+.card-pink {
+  color: $pink;
+}
+
+.card-box {
+  border: 1px solid black;
+}
+.card-body {
+  justify-content: center;
+}

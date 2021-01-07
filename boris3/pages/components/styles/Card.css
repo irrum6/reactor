@@ -1,0 +1,21 @@
+.card-red {
+  color: #ff4800;
+}
+
+.card-black {
+  color: #202020;
+}
+
+.card-pink {
+  color: #f87cf8;
+}
+
+.card-box {
+  border: 1px solid black;
+}
+
+.card-body {
+  justify-content: center;
+}
+
+/*# sourceMappingURL=Card.css.map */
