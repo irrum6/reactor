@@ -1,4 +1,5 @@
-import "./common.css"
+import "./styles/common.css"
+import "./styles/colors.css"
 
 import "./components/styles/Navbar.css"
 import "./components/styles/Board.css"

@@ -8,15 +8,14 @@ const CloseSelf = ()=>GetSelf().style.display = 'none';
 const listDisplay = () => (
     < div className="" id={this.state.id} >
         <div className="close">
-            <button className="close" onClick={this.close.bind(this)}>&#x25AC;</button>
+            <button className="close" onClick={CloseSelf}>&#x25AC;</button>
         </div>
-        <div className="list-row">
-            {names}
+        <div className="list-row">            
         </div>
     </div >);
 
-const showList = (list) =>{
-
+const showList = (list) => {
+    
 }
 
 export default listDisplay;

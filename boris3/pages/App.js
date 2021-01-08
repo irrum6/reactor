@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Board from './components/Board';
 import PromptWindow, { ShowWindow, CloseWindow} from './components/Prompt';
 import AlertMessage,{ShowAlertMessage} from './components/alert';
+import ListDisplay,{showList} from './components/listwindow';
 
 import CARDS from './data/cards.json';
 
@@ -59,17 +60,19 @@ class FortunaApp extends Component {
         if (gameOver){
             this.GameOver();
         }
-
-        previousCardIndex = currentCardindex;
-        currentCardindex++;
-
+        
         if (currentCardindex > (cards.length - 1)){
+            gameOver = true;
             this.GameWon();
         }
-        score *= 2;
-
+        if(!gameOver){
+            score *= 2;
+        }
+        previousCardIndex = currentCardindex;
+        currentCardindex++;
+        
         cards[previousCardIndex].show = true;
-        this.setState({ cards, gameOver,previousCardIndex, currentCardindex });        
+        this.setState({ cards, score, gameOver,previousCardIndex, currentCardindex });        
     }
     GameOver () {
         ShowAlertMessage('თამაში მორჩა !');
@@ -129,6 +132,7 @@ class FortunaApp extends Component {
                 other={this.state.answers[2].title} otherVal={2}
                 onSetValue={this.answer.bind(this)} />
             <AlertMessage />
+            <ListDisplay />
         </div>);
     }
 }
