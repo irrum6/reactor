@@ -6,7 +6,7 @@ const ShowSelf = ()=>GetSelf().style.display = 'block';
 const CloseSelf = ()=>GetSelf().style.display = 'none';
 
 const listDisplay = () => (
-    < div className="" id={this.state.id} >
+    < div className="" id={windowId} >
         <div className="close">
             <button className="close" onClick={CloseSelf}>&#x25AC;</button>
         </div>
