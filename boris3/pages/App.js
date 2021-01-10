@@ -120,8 +120,9 @@ class FortunaApp extends Component {
         if(records ===  undefined){
             records = [];
         }
-        let string = records.map(o=>`${o.date}:${o.score}`).join("");
-        alert(string);
+        showList(records);
+        // let string = records.map(o=>`${o.date}:${o.score}`).join("");
+        // alert(string);
     }
     render() {
         return (<div className="App">

@@ -1,0 +1,45 @@
+#listWindow {
+    display: none;
+    padding: 1vmin;
+    padding-bottom: 2vmin;
+    position: absolute;
+    left: 30vmin;
+    top: 30vh;
+    z-index: 3;
+    width: 40vmin;
+    background-color: #108020;
+    border: 0.5vmin solid black;
+    border-radius: 3%;
+}
+
+@media screen and (max-aspect-ratio:1/1){
+    #listWindow {
+        width: 80vmin;
+        left: 10vmin;
+        top: 30vh;
+    }
+}
+
+#listWindow div.closer button {
+    border-radius: 4%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-right-color: black;
+    border-left-color: black;
+    border-bottom-color: steelblue;
+    border-top-color: steelblue;
+    border-width: 0.25rem;
+    background-color: transparent;
+    color: black;
+
+}
+
+#listWindow div.closer {
+    padding:4vmin;
+    display: flex;
+    justify-content: center;
+}
+
+#scorelist .record-date::after{
+    content: '▶';
+}
