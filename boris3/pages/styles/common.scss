@@ -25,10 +25,18 @@ $rems:(
     .pr#{$k} {
       padding-right: $v;
     }
+    .px#{$k} {
+      padding-left: $v;
+      padding-right: $v;
+    }    
     .pt#{$k} {
       padding-top: $v;
     }
     .pb#{$k} {
+      padding-bottom: $v;
+    }
+    .py#{$k} {
+      padding-top: $v;
       padding-bottom: $v;
     }
     .f#{$k} {
@@ -86,6 +94,9 @@ $rems:(
 
 .space-between {
   justify-content: space-between;
+}
+.space-even {
+  justify-content: space-evenly;
 }
 
 .inline {

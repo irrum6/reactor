@@ -6,12 +6,12 @@ const ShowSelf = ()=>GetSelf().style.display = 'block';
 const CloseSelf = ()=>GetSelf().style.display = 'none';
 
 const listDisplay = () => (
-    < div className=""id={windowId} >
+    < div className="px0"id={windowId} >
         <div className="close">
-            <button className="close" onClick={CloseSelf}>&#x25AC;</button>
+            <button className="close bg-blend" onClick={CloseSelf}>&#x25AC;</button>
         </div>
-        <div className="list-row">
-            <div>
+        <div className="list-row px0">
+            <div className="flex pyq space-even">
                 <span data-app-translate="1" data-app-text="date">თარიღი</span>
                 <span data-app-translate="1" data-app-text="score">ქულა</span>
             </div>
@@ -56,6 +56,8 @@ const showList = (list) => {
         score.textContent = element.score;
         const box = document.createElement('div');
         box.classList.add('record-box');
+        box.classList.add('flex');
+        box.classList.add('space-even');
         box.appendChild(date);
         box.appendChild(score);
         scoreList.appendChild(box);

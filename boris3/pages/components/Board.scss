@@ -6,28 +6,21 @@
 @media screen and (max-aspect-ratio:3/2){
   .board {
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(6,auto);
   }
 }
 
 @media screen and (max-aspect-ratio:1/1){
   .board {
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(5,auto);
   }
 }
 
 @media screen and (max-aspect-ratio:2/3){
   .board {
     display: grid;
-    grid-template-columns: repeat(3,auto);
-  }
-}
-
-@media screen and (max-aspect-ratio:9/16){
-  .board {
-    display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(4,auto);
   }
 }
 

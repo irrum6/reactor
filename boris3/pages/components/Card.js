@@ -6,7 +6,7 @@ const card = (props) => {
 
     let { show, symbol, color, value } = data;
 
-    const GENERIC_SYMBOL = "♫♫"
+    const GENERIC_SYMBOL = "♫"
 
     symbol = show ? symbol : GENERIC_SYMBOL;
     color = show ? color : 'black';
@@ -15,7 +15,7 @@ const card = (props) => {
     const cssColorClass = `card-${color}`;
 
     return (
-        <div className="flex space-between column ph card-box">
+        <div className="flex space-between column pxh pyq card-box">
             <div className="flex f1 row space-between card-upper">
                 <span className={cssColorClass}> {symbol}</span>
                 <span className={cssColorClass}> {symbol}</span>

@@ -14,11 +14,21 @@ html {
   padding-right: 0;
 }
 
+.px0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .pt0 {
   padding-top: 0;
 }
 
 .pb0 {
+  padding-bottom: 0;
+}
+
+.py0 {
+  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -58,11 +68,21 @@ html {
   padding-right: 0.25rem;
 }
 
+.pxq {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .ptq {
   padding-top: 0.25rem;
 }
 
 .pbq {
+  padding-bottom: 0.25rem;
+}
+
+.pyq {
+  padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 
@@ -102,11 +122,21 @@ html {
   padding-right: 0.5rem;
 }
 
+.pxh {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pth {
   padding-top: 0.5rem;
 }
 
 .pbh {
+  padding-bottom: 0.5rem;
+}
+
+.pyh {
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
@@ -146,11 +176,21 @@ html {
   padding-right: 0.75rem;
 }
 
+.px3q {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pt3q {
   padding-top: 0.75rem;
 }
 
 .pb3q {
+  padding-bottom: 0.75rem;
+}
+
+.py3q {
+  padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
@@ -190,11 +230,21 @@ html {
   padding-right: 1rem;
 }
 
+.px1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt1 {
   padding-top: 1rem;
 }
 
 .pb1 {
+  padding-bottom: 1rem;
+}
+
+.py1 {
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -234,11 +284,21 @@ html {
   padding-right: 1.5rem;
 }
 
+.px1h {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pt1h {
   padding-top: 1.5rem;
 }
 
 .pb1h {
+  padding-bottom: 1.5rem;
+}
+
+.py1h {
+  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
@@ -278,11 +338,21 @@ html {
   padding-right: 2rem;
 }
 
+.px2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pt2 {
   padding-top: 2rem;
 }
 
 .pb2 {
+  padding-bottom: 2rem;
+}
+
+.py2 {
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -322,11 +392,21 @@ html {
   padding-right: 3rem;
 }
 
+.px3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .pt3 {
   padding-top: 3rem;
 }
 
 .pb3 {
+  padding-bottom: 3rem;
+}
+
+.py3 {
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -366,11 +446,21 @@ html {
   padding-right: 4rem;
 }
 
+.px4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .pt4 {
   padding-top: 4rem;
 }
 
 .pb4 {
+  padding-bottom: 4rem;
+}
+
+.py4 {
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
@@ -410,11 +500,21 @@ html {
   padding-right: 5rem;
 }
 
+.px5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pt5 {
   padding-top: 5rem;
 }
 
 .pb5 {
+  padding-bottom: 5rem;
+}
+
+.py5 {
+  padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
@@ -454,11 +554,21 @@ html {
   padding-right: 6rem;
 }
 
+.px6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .pt6 {
   padding-top: 6rem;
 }
 
 .pb6 {
+  padding-bottom: 6rem;
+}
+
+.py6 {
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
@@ -524,6 +634,10 @@ html {
 
 .space-between {
   justify-content: space-between;
+}
+
+.space-even {
+  justify-content: space-evenly;
 }
 
 .inline {

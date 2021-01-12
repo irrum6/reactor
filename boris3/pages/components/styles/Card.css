@@ -12,10 +12,27 @@
 
 .card-box {
   border: 1px solid black;
+  height: 30vh;
 }
 
 .card-body {
   justify-content: center;
+}
+
+@media screen and (max-aspect-ratio: 3/2) {
+  .card-box {
+    height: 25vh;
+  }
+}
+@media screen and (max-aspect-ratio: 1/1) {
+  .card-box {
+    height: 20vh;
+  }
+}
+@media screen and (max-aspect-ratio: 2/3) {
+  .card-box {
+    height: 15vh;
+  }
 }
 
 /*# sourceMappingURL=Card.css.map */
